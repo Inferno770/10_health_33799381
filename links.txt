@@ -1,0 +1,9 @@
+home=https://www.doc.gold.ac.uk/usr/345/
+about=https://www.doc.gold.ac.uk/usr/345//about
+add_workout=https://www.doc.gold.ac.uk/usr/345/workouts/add
+search_workouts=https://www.doc.gold.ac.uk/usr/345/workouts/search
+list_workouts=https://www.doc.gold.ac.uk/usr/345/workouts/list
+weather=https://www.doc.gold.ac.uk/usr/345/weather
+login=https://www.doc.gold.ac.uk/usr/345/users/login
+register=https://www.doc.gold.ac.uk/usr/345/users/register
+audit_log=https://www.doc.gold.ac.uk/usr/345/users/audit
