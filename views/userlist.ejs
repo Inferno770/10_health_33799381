@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <title>User List - <%= appData.appName %></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <div class="container">
+        <h1>Registered Users</h1>
+        
+        <ul>
+          <% availableUsers.forEach(function(user) { %>
+          
+            <li>
+                <%= user.first_name %> <%= user.last_name %> 
+                (Email: <%= user.email %>) 
+                - Username: <%= user.username %>
+            </li>
+            
+          <% }); %>
+        </ul>
+        <p><a href="/">Home</a></p>
+    </div>
+  </body>
+</html>

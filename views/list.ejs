@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <title>All Workouts - <%= appData.appName %></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Workout Log</h1>
+        <table border="1">
+            <tr>
+                <th>Date</th>
+                <th>User</th>
+                <th>Activity</th>
+                <th>Duration (mins)</th>
+                <th>Calories</th>
+                <th>Notes</th>
+            </tr>
+            <% availableWorkouts.forEach(function(workout){ %>
+                <tr>
+                    <td><%= new Date(workout.date).toDateString() %></td>
+                    <td><%= workout.first_name %></td>
+                    <td><%= workout.activity %></td>
+                    <td><%= workout.duration %></td>
+                    <td><%= workout.calories %></td>
+                    <td><%= workout.notes %></td>
+                </tr>
+            <% }) %>
+        </table>
+        <p><a href="/">Home</a></p>
+    </div>
+</body>
+</html>

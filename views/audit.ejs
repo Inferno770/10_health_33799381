@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Audit Log - <%= appData.appName %></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+    <style>
+        /* Simple styling to make the table look neat */
+        table { width: 100%; border-collapse: collapse; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+        <h1>Login Audit History</h1>
+        
+        <table>
+            <thead>
+                <tr>
+                    <th>Time</th>
+                    <th>Username Attempted</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% auditData.forEach(function(log) { %>
+                    <tr>
+                        <td><%= log.timestamp.toLocaleString() %></td>
+                        <td><%= log.username %></td>
+                        <td><%= log.action %></td>
+                    </tr>
+                <% }); %>
+            </tbody>
+        </table>
+        <p><a href="/">Home</a></p>
+    </div>
+  </body>
+</html>

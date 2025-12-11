@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <title><%= appData.appName %> Home</title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+  </head>
+  <body>
+    <div class="container"> <h1>Welcome to <%= appData.appName %></h1>
+        <p>Track your fitness journey, one step at a time.</p>
+        
+        <h2>Menu</h2>
+        <ul>
+            <li><a href="/workouts/list">View All Workouts</a></li>
+            <li><a href="/workouts/add">Log a Workout</a></li>
+            <li><a href="/workouts/search">Search Workouts</a></li>
+            <li><a href="/weather">Check Weather</a></li>
+            <li><a href="/about">About Us</a></li>
+        </ul>
+
+        <hr>
+        <h2>User Account</h2>
+        <ul>
+            <li><a href="/users/register">Register</a></li>
+            <li><a href="/users/login">Login</a></li>
+            <li><a href="/users/logout">Logout</a></li>
+            <li><a href="/users/audit">View Audit Log</a></li>
+        </ul>
+
+    </div> </body>
+</html>

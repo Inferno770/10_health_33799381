@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+<head>
+    <title>Log a Workout - <%= appData.appName %></title>
+    <link rel="stylesheet"  type="text/css" href="/main.css" />
+</head>
+<body>
+    <div class="container">
+        <h1>Log a New Workout</h1>
+        <form action="/workouts/workoutadded" method="POST">
+            <p>Date: <input type="date" name="date" required /></p>
+            <p>Activity: <input type="text" name="activity" placeholder="e.g. Running" required /></p>
+            <p>Duration (mins): <input type="number" name="duration" required /></p>
+            <p>Calories Burned: <input type="number" name="calories" required /></p>
+            <p>Notes: <input type="text" name="notes" placeholder="How did it feel?" /></p>
+            <input type="submit" value="Save Workout" />
+        </form>
+        <p><a href="/">Home</a></p>
+    </div>
+</body>
+</html>
